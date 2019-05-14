@@ -6,3 +6,9 @@ puts "Exercise 3"
 puts "----------"
 
 # Your code goes here ...
+# -----------------EXERCISE 3-----------------
+
+@store3 = Store.find_by(id: 3)
+pp @store3
+@store3.destroy
+
