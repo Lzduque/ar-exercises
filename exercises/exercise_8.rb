@@ -11,4 +11,5 @@ puts "Exercise 8"
 puts "----------"
 
 # Your code goes here ...
-
+@harry = @store2.employees.create(first_name: "Harry", last_name: "All-Trades", hourly_rate: 45)
+pp @harry.password
