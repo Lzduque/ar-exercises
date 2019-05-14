@@ -27,3 +27,11 @@ pp @store2
 @store1.annual_revenue = 300500
 @store1.save
 pp @store1
+
+# -----------------EXERCISE 3-----------------
+
+@store3 = Store.find_by(id: 3)
+pp @store3
+@store3.destroy
+
+# -----------------EXERCISE 4-----------------
