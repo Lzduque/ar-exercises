@@ -23,3 +23,7 @@ pp @store1
 
 @store2 = Store.find_by(id: 2)
 pp @store2
+
+@store1.annual_revenue = 300500
+@store1.save
+pp @store1
