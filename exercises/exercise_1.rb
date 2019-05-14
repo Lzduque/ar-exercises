@@ -15,5 +15,11 @@ richmond_store = Store.create(name: "Richmond", annual_revenue: 1260000, mens_ap
 gastowny_store = Store.create(name: "Gastown", annual_revenue: 190000, mens_apparel: true, womens_apparel: false)
 
 puts Store.count
+
 # -----------------EXERCISE 2-----------------
 
+@store1 = Store.find_by(id: 1)
+pp @store1
+
+@store2 = Store.find_by(id: 2)
+pp @store2
