@@ -19,3 +19,6 @@ pp @mens_stores
 @mens_stores.each do |store|
   puts "name: #{store.name}, annual_revenue: #{store.annual_revenue}"
 end
+
+@womens_stores = Store.where("annual_revenue > 1000000 AND womens_apparel = true")
+pp @womens_stores
