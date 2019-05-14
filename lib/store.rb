@@ -1,5 +1,5 @@
 class Store < ActiveRecord::Base
-  has_many :employees
+  has_many :employees, :dependent => :restrict_with_error
   validates :name, length: { minimum: 3 }
   validates :annual_revenue, numericality: { only_integer: true , greater_than: 0 }
   validate :must_have_women_or_men_apparel
@@ -11,4 +11,5 @@ class Store < ActiveRecord::Base
       errors.add(:womens_apparel, "must sell at least one type of apparel")
     end
   end
- end
+
+end
